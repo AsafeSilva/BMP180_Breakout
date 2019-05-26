@@ -53,8 +53,11 @@ V1.1.2 Updates for Arduino 1.6.4 5/2015
 // You will need to create an SFE_BMP180 object, here called "pressure":
 
 SFE_BMP180 pressure;
-// or "&Wire1" to Arduino DUE
-// SFE_BMP180 pressure(&Wire1);
+// If you are using another hardware instance such as 'Wire1'
+// or software like 'SoftwareWire myWire' (for example) use:
+// SFE_BMP180 pressure(Wire1);
+// or
+// SFE_BMP180 pressure(myWire);
 
 double baseline; // baseline pressure
 

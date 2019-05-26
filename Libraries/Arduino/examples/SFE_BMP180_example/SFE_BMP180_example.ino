@@ -69,6 +69,11 @@ V1.1.2 Updates for Arduino 1.6.4 5/2015
 // You will need to create an SFE_BMP180 object, here called "pressure":
 
 SFE_BMP180 pressure;
+// If you are using another hardware instance such as 'Wire1'
+// or software like 'SoftwareWire myWire' (for example) use:
+// SFE_BMP180 pressure(Wire1);
+// or
+// SFE_BMP180 pressure(myWire);
 
 #define ALTITUDE 1655.0 // Altitude of SparkFun's HQ in Boulder, CO. in meters
 

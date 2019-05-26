@@ -32,7 +32,7 @@ class SFE_BMP180
 {
 	public:
 		SFE_BMP180(); // base type
-		SFE_BMP180(TwoWire *_twi); // base type
+		SFE_BMP180(TwoWire &_twi); // base type
 
 		char begin();
 			// call pressure.begin() to initialize BMP180 before use

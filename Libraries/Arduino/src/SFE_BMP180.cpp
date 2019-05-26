@@ -29,10 +29,10 @@ SFE_BMP180::SFE_BMP180()
 	twi = &Wire;
 }
 
-SFE_BMP180::SFE_BMP180(TwoWire *_twi)
+SFE_BMP180::SFE_BMP180(TwoWire &_twi)
 // Base library type
 {
-	twi = _twi;
+	twi = &_twi;
 }
 
 
